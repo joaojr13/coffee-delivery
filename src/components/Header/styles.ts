@@ -1,27 +1,32 @@
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 10rem;
-  padding: 2rem 0;
+  position: sticky;
+  top: 0;
+  padding: 2rem 10rem;
+  background: ${(props) => props.theme.background};
 
-  nav {
+  div {
     display: flex;
-    gap: 0.75rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 
-    a {
+    nav {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      gap: 0.75rem;
 
-      padding: 0.5rem;
-      border-radius: 6px;
-      gap: 4px;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-      text-decoration: none;
+        padding: 0.5rem;
+        border-radius: 6px;
+        gap: 4px;
+
+        text-decoration: none;
+      }
     }
   }
 `
